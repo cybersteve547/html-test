@@ -16,7 +16,7 @@ function animate(timestamp) {
 }
 
 function jump() {
-    vel = 5;
+    vel = 10;
 }
 
 requestAnimationFrame(animate);
