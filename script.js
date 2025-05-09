@@ -1,6 +1,5 @@
 const myCanvas = document.getElementById("myCanvas");
 const ctx = myCanvas.getContext("2d");
-const audio = new Audio('AEE.mp3.wav');
 let y = 0;
 let vel = 0;
 const g = -1;
@@ -16,8 +15,7 @@ function animate(timestamp) {
     requestAnimationFrame(animate);
 }
 
-function playSound() {
-    audio.play();
+function jump() {
     vel = 10;
 }
 
