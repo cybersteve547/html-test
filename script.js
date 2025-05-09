@@ -2,7 +2,7 @@ const myCanvas = document.getElementById("myCanvas");
 const ctx = myCanvas.getContext("2d");
 let y = 0;
 let vel = 0;
-const g = -1;
+const g = -0.5;
 function animate(timestamp) {
     vel += g;
     y += vel;
@@ -16,7 +16,7 @@ function animate(timestamp) {
 }
 
 function jump() {
-    vel = 10;
+    vel = 5;
 }
 
 requestAnimationFrame(animate);
